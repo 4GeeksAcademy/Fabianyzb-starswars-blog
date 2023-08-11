@@ -1,3 +1,174 @@
 /* 
     General Styles
 */
+.bg {
+background-color: rgb(5, 5, 5);
+  }
+
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    perspective: 1000px; 
+    display: flex;/* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 10px;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgba(35, 38, 41, 0.534);
+    color: white;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+  }
+.titulo-card, .first-desc, .second-desc{
+    margin-top: 20px;
+    color: rgb(255, 251, 0);
+}
+
+.like
+{
+    color: rgb(255, 251, 0);
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.like:hover{
+  color: #FF0000;
+}
+
+.titulo-carrusel{
+    font-family: 'Star Wars', sans-serif;
+    color: rgb(255, 251, 0);                                            
+}
+.titulo-info{
+    font-family: 'Revalia', cursive;
+    font-size: 15px;
+    color: rgb(255, 251, 0);   
+}
+.arrow-r{
+    cursor:pointer;
+    color: yellow;
+    font-family: 'Star Wars', sans-serif;
+    transition: 0.2s;
+}
+.arrow-l{
+  cursor:pointer;
+  color: yellow;
+  font-family: 'Star Wars', sans-serif;
+  transition: 0.2s;
+}
+
+.arrow-l:hover{
+  color: #fff;
+  text-shadow:
+    0 0 7px #FF0000,
+    0 0 10px #FF0000,
+    0 0 21px #FF0000,
+    0 0 42px #FF0000,
+    0 0 82px #FF0000,
+    0 0 92px #FF0000,
+    0 0 102px #FF0000,
+    0 0 151px #FF0000;
+}
+.arrow-r:hover{
+  color: #fff;
+  text-shadow:
+  0 0 7px #004aff,
+  0 0 10px #004aff,
+  0 0 21px #004aff,
+  0 0 42px #004aff,
+  0 0 82px #004aff,
+  0 0 92px #004aff,
+  0 0 102px #004aff,
+  0 0 151px #004aff;
+}
+
+#heart-fav-list{
+  cursor:pointer;
+  color: yellow;
+  transition: 0.2s;
+  
+}
+
+.arrow-back{  
+  cursor:pointer;
+  color: yellow;
+  
+  transition: 0.2s;}
+
+
+.arrow-back:hover{
+    color: #fff;
+    text-shadow:
+    0 0 7px #b10ca8,
+    0 0 10px #b10ca8,
+    0 0 21px #b10ca8,
+    0 0 42px #b10ca8,
+    0 0 82px #b10ca8,
+    0 0 92px #b10ca8,
+    0 0 102px #b10ca8,
+    0 0 151px #b10ca8;
+  }  
+
+#heart-fav-list:hover{
+  color: #fff;
+  text-shadow:
+  0 0 7px #2fc00f,
+  0 0 10px #2fc00f,
+  0 0 21px #2fc00f,
+  0 0 42px #2fc00f,
+  0 0 82px #2fc00f,
+  0 0 92px #2fc00f,
+  0 0 102px #2fc00f,
+  0 0 151px #2fc00f;
+}
+
+.arrow:hover{
+    color:wheat;
+}
+.delete{
+  color:gray;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.delete:hover{
+  color:whitesmoke;
+  
+}
