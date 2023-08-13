@@ -72,6 +72,10 @@ background-color: rgb(5, 5, 5);
   color: #FF0000;
 }
 
+.like:active{
+  transform: scale(0.9);
+}
+
 .titulo-carrusel{
     font-family: 'Star Wars', sans-serif;
     color: rgb(255, 251, 0);                                            
@@ -87,11 +91,21 @@ background-color: rgb(5, 5, 5);
     font-family: 'Star Wars', sans-serif;
     transition: 0.2s;
 }
+
+.arrow-r:active{
+  transform: scale(0.9);
+}
+
+
 .arrow-l{
   cursor:pointer;
   color: yellow;
   font-family: 'Star Wars', sans-serif;
   transition: 0.2s;
+}
+
+.arrow-l:active{
+  transform: scale(0.9);
 }
 
 .arrow-l:hover{
@@ -126,12 +140,19 @@ background-color: rgb(5, 5, 5);
   
 }
 
+#heart-fav-list:active{
+  transform: scale(0.9);
+}
+
 .arrow-back{  
   cursor:pointer;
   color: yellow;
   
   transition: 0.2s;}
 
+.arrow-back:active{
+transform: scale(0.9);
+}
 
 .arrow-back:hover{
     color: #fff;
@@ -159,6 +180,8 @@ background-color: rgb(5, 5, 5);
   0 0 151px #2fc00f;
 }
 
+
+
 .arrow:hover{
     color:wheat;
 }
@@ -171,4 +194,8 @@ background-color: rgb(5, 5, 5);
 .delete:hover{
   color:whitesmoke;
   
+}
+
+.delete:active{
+transform: scale(0.9);
 }
