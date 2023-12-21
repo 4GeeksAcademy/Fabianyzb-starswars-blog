@@ -32,7 +32,7 @@ export const Caracteres = () => {
         <a className=' fs-1 arrow-l m-2' onClick={handlePrevClick}><i class="fa-solid fa-arrow-left"></i></a>
         <a className='fs-1 arrow-r m-2' onClick={handleNextClick}><i class="fa-solid fa-arrow-right"></i></a>
       </div>
-      <div className="container-fluid py-2 d-flex titulo-info  pe-5">
+      <div className="container-fluid py-2 d-flex titulo-info pe-5 justify-content-center">
         {cards.slice(activeIndex, activeIndex + 4).map((card) => (
           <div className="flip-card d-flex m-4" key={card.uid}>
             <div className="flip-card-inner">
